@@ -1,0 +1,42 @@
+body {
+	background-color: #55acee;
+}
+button {
+	background-color: #55acee;
+	border: solid 1px #fff;
+	color: #fff;
+	width: 20%;
+	height: auto;
+	padding: 10px;
+	margin-left: 40%;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #3fa1ec;
+}
+h1 {
+	text-align: center;
+	color: #fff;
+}
+.quote {
+	color: #fff;
+	text-align: center;
+}
+.author {
+	color: #fff;
+	text-align: center;
+}
+.trigger {
+	margin-bottom: 30px;
+}
+.tweet {
+	border: solid 1px #fff;
+	color: #fff;
+	padding: 10px 103px;
+	margin-left: 40%;
+	text-decoration: none;
+}
+.tweet:hover {
+	cursor: pointer;
+	background-color: #3fa1ec;	
+}
