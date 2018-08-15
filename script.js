@@ -10,24 +10,14 @@ button.addEventListener('click', function(){
 var paragraph = document.getElementById('quote');
 
 function getQuote() {
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', url);
-	xhr.addEventListener('load', function(){
-		var response = JSON.parse(xhr.response);
-		paragraph.innerHTML = response.value.joke;
-	});
-	xhr.send();
-}
-
-getQuote();
-
-function getQuote() {
     fetch(prefix + quoteUrl, { cache: "no-store" })
         .then(function(resp) {
             return resp.json();
         })
         .then(createTweet);
 }
+
+getQuote();
 
 function createTweet(input) {
     var data = input[0];
